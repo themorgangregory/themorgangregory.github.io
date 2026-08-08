@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallery — Morgan Gregory
+permalink: /gallery/
 ---
 
 <section class="page-hero">

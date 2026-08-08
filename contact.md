@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact — Morgan Gregory
+permalink: /contact/
 ---
 
 <section class="page-hero">

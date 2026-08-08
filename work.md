@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Work — Morgan Gregory
+permalink: /work/
 ---
 
 <section class="page-hero">
