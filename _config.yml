@@ -1,0 +1,27 @@
+# Site settings
+title: Morgan Gregory
+email: ""
+description: >-
+  Choreographer and dance artist researching Afro-diasporic gestures,
+  Afrofuturism, and the Black body as narrative.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://themorgangregory.github.io" # for GitHub Pages user site
+twitter_username: themorgangregory
+github_username: themorgangregory
+instagram_username: themorgangregory
+
+# Build settings
+markdown: kramdown
+theme: minima # GitHub Pages default theme (we override with custom layouts/styles)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - .gitignore

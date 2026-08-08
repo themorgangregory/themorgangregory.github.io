@@ -1,0 +1,479 @@
+/* ============================================================
+   Morgan Gregory — Personal Website
+   Afrofuturist editorial aesthetic
+   ============================================================ */
+
+:root {
+  --bg: #0d0f14;
+  --bg-alt: #141722;
+  --surface: #1a1e2c;
+  --text: #e8e6e1;
+  --text-muted: #a8a5a0;
+  --accent: #d4a24e;
+  --accent-soft: rgba(212, 162, 78, 0.15);
+  --border: rgba(232, 230, 225, 0.12);
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --max-width: 1080px;
+  --header-h: 72px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #e8c47e;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(13, 15, 20, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-h);
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.site-nav a {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.site-nav a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(212, 162, 78, 0.12), transparent 60%),
+    var(--bg);
+}
+
+.hero-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-tagline {
+  color: var(--accent);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Page hero (inner pages)
+   ============================================================ */
+
+.page-hero {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 400;
+}
+
+/* ============================================================
+   Prose / Bio
+   ============================================================ */
+
+.bio {
+  padding: 0 0 100px;
+}
+
+.prose {
+  max-width: 720px;
+}
+
+.prose p {
+  font-size: 1.05rem;
+  margin-bottom: 1.6em;
+  color: var(--text);
+}
+
+.prose p:first-of-type::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3.2em;
+  float: left;
+  line-height: 0.85;
+  padding-right: 10px;
+  color: var(--accent);
+}
+
+/* ============================================================
+   Work page
+   ============================================================ */
+
+.work-section {
+  padding: 0 0 56px;
+}
+
+.work-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.work-list {
+  list-style: none;
+}
+
+.work-list li {
+  padding: 10px 0;
+  padding-left: 22px;
+  position: relative;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.work-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.work-list strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.work-list em {
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Gallery
+   ============================================================ */
+
+.gallery-section {
+  padding: 0 0 100px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+.gallery-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-trigger img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.gallery-trigger:hover img {
+  transform: scale(1.04);
+  opacity: 0.85;
+}
+
+.gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ============================================================
+   Lightbox
+   ============================================================ */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(8, 9, 13, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  margin: 0;
+  text-align: center;
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-content figcaption {
+  margin-top: 14px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+.lightbox-close {
+  top: 24px;
+  right: 24px;
+}
+
+.lightbox-prev {
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lightbox-next {
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ============================================================
+   Contact
+   ============================================================ */
+
+.contact-section {
+  padding: 20px 0 100px;
+  text-align: center;
+}
+
+.contact-lede {
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+.contact-item {
+  margin-bottom: 24px;
+}
+
+.contact-item a {
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--accent);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+}
+
+.contact-item a:hover {
+  border-bottom-color: var(--accent);
+  color: #e8c47e;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 32px 0;
+  background: var(--bg-alt);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-footer p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 0;
+    gap: 12px;
+  }
+
+  .site-nav {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 80px 0 60px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-trigger img {
+    height: 260px;
+  }
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

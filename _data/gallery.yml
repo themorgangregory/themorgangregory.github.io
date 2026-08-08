@@ -1,0 +1,29 @@
+# Gallery images
+# To add an image: drop the file in assets/images/ and add a new entry below.
+# filename: should match the file you uploaded
+# caption: optional — appears under the photo in the lightbox
+# alt: describes the photo for screen readers and accessibility
+
+- filename: img_4251.jpg
+  caption: ""
+  alt: Performance photograph of Morgan Gregory in mid-movement
+
+- filename: img_4252.jpg
+  caption: ""
+  alt: Performance photograph of Morgan Gregory in expressive motion
+
+- filename: img_4255.jpg
+  caption: ""
+  alt: Performance photograph of Morgan Gregory during a dance sequence
+
+- filename: img_4328.jpg
+  caption: ""
+  alt: Portrait of Morgan Gregory in a contemplative pose
+
+- filename: img_4463.jpg
+  caption: ""
+  alt: Photograph of Morgan Gregory dancing in a studio setting
+
+- filename: img_4464.jpg
+  caption: ""
+  alt: Photograph of Morgan Gregory captured in motion

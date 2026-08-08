@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">Morgan Gregory</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Bio</a>
+      <a href="{{ '/work/' | relative_url }}" {% if page.url == '/work/' %}class="active"{% endif %}>Work</a>
+      <a href="{{ '/gallery/' | relative_url }}" {% if page.url == '/gallery/' %}class="active"{% endif %}>Gallery</a>
+      <a href="{{ '/contact/' | relative_url }}" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
