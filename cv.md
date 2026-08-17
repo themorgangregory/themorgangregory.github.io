@@ -4,15 +4,10 @@ title: CV — Morgan Gregory
 permalink: /cv/
 ---
 
-<section class="page-hero">
+<section class="contact-section">
   <div class="container">
-    <h1>CV</h1>
-  </div>
-</section>
-
-<section class="cv-section">
-  <div class="container cv-body">
-    <p class="cv-lede">Download my curriculum vitae:</p>
-    <p><a class="cv-link" href="{{ '/assets/docs/2026-cv-morgan-gregory.docx' | relative_url }}" download>2026 CV — Morgan Gregory (DOCX)</a></p>
+    <p class="contact-item">
+      <a href="{{ '/assets/docs/2026-cv-morgan-gregory.docx' | relative_url }}" download>2026 CV — Morgan Gregory (DOCX)</a>
+    </p>
   </div>
 </section>
