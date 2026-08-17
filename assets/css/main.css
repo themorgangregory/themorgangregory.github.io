@@ -262,6 +262,37 @@ main {
 }
 
 /* ============================================================
+   CV
+   ============================================================ */
+
+.cv-section {
+  padding: 8px 0 120px;
+}
+
+.cv-body {
+  max-width: var(--measure);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cv-lede {
+  color: var(--text);
+  margin-bottom: 26px;
+}
+
+.cv-link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.cv-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ============================================================
    Contact
    ============================================================ */
 

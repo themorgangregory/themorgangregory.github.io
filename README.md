@@ -6,6 +6,7 @@ A personal website built with [Jekyll](https://jekyllrb.com) for GitHub Pages.
 
 - **Home** (`index.md`) — Name and title, plus the photo carousel
 - **Biography** (`bio.md`) — Artist statement
+- **CV** (`cv.md`) — Downloadable curriculum vitae (Word doc in `assets/docs/`)
 - **Contact** (`contact.md`) — Instagram + email
 
 ## 📦 Requirements (for local preview only)
