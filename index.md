@@ -9,6 +9,9 @@ description: Choreographer and dance artist researching Afro-diasporic gestures,
       {% for item in site.data.gallery %}
       <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide {{ forloop.index }} of {{ site.data.gallery.size }}">
         <img src="{{ '/assets/images/' | append: item.filename | relative_url }}" alt="{{ item.alt }}" {% if forloop.first %}loading="eager"{% else %}loading="lazy"{% endif %}>
+        {% if item.caption and item.caption != "" %}
+        <figcaption>{{ item.caption }}</figcaption>
+        {% endif %}
       </figure>
       {% endfor %}
     </div>

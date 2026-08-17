@@ -1,29 +1,61 @@
-# Gallery images
+# Gallery / carousel images — ordered to interleave different shoots
 # To add an image: drop the file in assets/images/ and add a new entry below.
-# filename: should match the file you uploaded
-# caption: optional — appears under the photo in the lightbox
+# filename: should match the file in assets/images
+# caption: optional — appears under the photo
 # alt: describes the photo for screen readers and accessibility
 
-- filename: img_4251.jpg
-  caption: ""
-  alt: Performance photograph of Morgan Gregory in mid-movement
-
-- filename: img_4252.jpg
-  caption: ""
-  alt: Performance photograph of Morgan Gregory in expressive motion
-
-- filename: img_4255.jpg
-  caption: ""
-  alt: Performance photograph of Morgan Gregory during a dance sequence
+- filename: judson-2025.jpg
+  caption: "Movement Research at Judson Church — photo by Rachel Keane"
+  alt: Morgan Gregory performing at Movement Research at Judson Church, photographed by Rachel Keane
 
 - filename: img_4328.jpg
-  caption: ""
+  caption: "Photo by Jonah Hardi"
   alt: Portrait of Morgan Gregory in a contemplative pose
 
+- filename: img_3284.jpg
+  caption: "University Settlement — photo by SD Herzog"
+  alt: Performance photograph of Morgan Gregory at University Settlement
+
+- filename: img_4251.jpg
+  caption: "Photo by Jonah Hardi"
+  alt: Performance photograph of Morgan Gregory mid-movement
+
+- filename: space-grant-022.jpg
+  caption: "BAX Space Grant Residency — photo by Manuel Molina Martagón"
+  alt: Photograph of Morgan Gregory from a BAX Space Grant residency rehearsal
+
+- filename: open-stage-217.jpg
+  caption: "CPR presents Open Stage, Spring Movement — photo by Jose Miranda"
+  alt: Morgan Gregory performing at CPR presents Open Stage, Spring Movement
+
+- filename: img_4255.jpg
+  caption: "Photo by Jonah Hardi"
+  alt: Performance photograph of Morgan Gregory during a dance sequence
+
+- filename: img_3288.jpg
+  caption: "University Settlement — photo by SD Herzog"
+  alt: Performance photograph of Morgan Gregory at University Settlement
+
 - filename: img_4463.jpg
-  caption: ""
+  caption: "Photo by Jonah Hardi"
   alt: Photograph of Morgan Gregory dancing in a studio setting
 
+- filename: open-stage-200.jpg
+  caption: "CPR presents Open Stage, Spring Movement — photo by Jose Miranda"
+  alt: Morgan Gregory performing at CPR presents Open Stage, Spring Movement
+
+- filename: img_4252.jpg
+  caption: "Photo by Jonah Hardi"
+  alt: Performance photograph of Morgan Gregory in expressive motion
+
+- filename: space-grant-020.jpg
+  caption: "BAX Space Grant Residency — photo by Manuel Molina Martagón"
+  alt: Photograph of Morgan Gregory from a BAX Space Grant residency rehearsal
+
 - filename: img_4464.jpg
-  caption: ""
+  caption: "Photo by Jonah Hardi"
   alt: Photograph of Morgan Gregory captured in motion
+
+- filename: space-grant-021.jpg
+  caption: "BAX Space Grant Residency — photo by Manuel Molina Martagón"
+  alt: Photograph of Morgan Gregory from a BAX Space Grant residency rehearsal
