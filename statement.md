@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Biography — Morgan Gregory
-permalink: /biography/
+title: Statement — Morgan Gregory
+permalink: /statement/
 ---
 
 <section class="bio-section">
