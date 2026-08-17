@@ -4,9 +4,8 @@ A personal website built with [Jekyll](https://jekyllrb.com) for GitHub Pages.
 
 ## Pages
 
-- **Bio** (`index.md`) — Artist statement
-- **Work** (`work.md`) — Residencies, tours, premieres, education
-- **Gallery** (`gallery.md`) — Photo gallery with lightbox
+- **Home** (`index.md`) — Name and title, plus the photo carousel
+- **Biography** (`bio.md`) — Artist statement
 - **Contact** (`contact.md`) — Instagram + email
 
 ## 📦 Requirements (for local preview only)
@@ -87,25 +86,32 @@ Your site will be live within a few minutes at: **https://<your-username>.github
      caption: "Optional caption"
      alt: "Describe the photo for screen readers"
    ```
-3. Commit and push — GitHub Pages rebuilds automatically.
+3. Commit and push — GitHub Pages rebuilds automatically. New photos appear in the home-page carousel.
 
 ### Change the email on the Contact page
 Open `_config.yml` and replace `email: ""` with your email address.
 
 ### Edit text
 The page content lives in:
-- `index.md` (bio)
-- `work.md` (work credits)
+- `index.md` (name + title, carousel markup)
 - `contact.md` (contact)
 
 Edit the Markdown and push. GitHub Pages rebuilds automatically.
 
 ## 🎨 Design
 
-- **Palette:** Deep charcoal/indigo `#0d0f14`, warm text `#e8e6e1`, amber accent `#d4a24e`
-- **Typography:** [Fraunces](https://fonts.google.com/specimen/Fraunces) (display serif) + [Inter](https://fonts.google.com/specimen/Inter) (body sans)
+- **Palette:** Pure white background `#ffffff`, near-black text `#191919`, muted warm gray, and a restrained terracotta accent `#a33d28`
+- **Typography:** Self-hosted [AUTHENTIC Sans](https://authentic.website/sans) (free WTFPL webfont) — no Google Fonts or external requests
+- **Layout:** Cohesive left navigation that is fixed and persists while you scroll, sitting on the same (white) page background with no divider or box separation; the main content fills the window fluidly (padding `clamp(20px, 4vw, 64px)`, nothing hardcoded to a fixed width) and always begins below the name in the nav. On smaller screens the nav becomes a sticky top bar. The name appears at the top of the nav in capital letters at the same size as the other links and is never underlined.
+- **Home:** Only the auto-advancing photo slideshow, vertically centered on the page (the name lives in the left nav). The slideshow is about 45% of the page height — full, uncropped images rotating every ~3 seconds, non-interactive, and paused for users who prefer reduced motion.
+- **Biography:** Plain artist statement — the role line ("Choreographer · Dance Artist · Afrofuturist Researcher") is not shown.
+- **Contact:** Vertically centered intro + links, all in plain black text.
 - Styles: `assets/css/main.css`
-- Lightbox + footer year: `assets/js/main.js`
+- Carousel: `assets/js/main.js`
+
+### AUTHENTIC Sans license note
+
+The webfonts in `assets/fonts/` are AUTHENTIC Sans, distributed under the [WTFPL](https://www.wtfpl.net/) (see `assets/fonts/LICENSE-wtfpl.txt`). WTFPL covers personal and non-commercial use. If the site ever becomes commercial, license AUTHENTIC Sans Pro from [authentic.website](https://authentic.website).
 
 ## 📄 License
 

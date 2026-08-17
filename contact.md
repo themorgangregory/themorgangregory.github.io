@@ -4,12 +4,6 @@ title: Contact — Morgan Gregory
 permalink: /contact/
 ---
 
-<section class="page-hero">
-  <div class="container">
-    <h1>Contact</h1>
-  </div>
-</section>
-
 <section class="contact-section">
   <div class="container">
     <p class="contact-lede">For booking, collaborations, and press inquiries:</p>

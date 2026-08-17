@@ -1,9 +1,7 @@
 # Site settings
 title: Morgan Gregory
-email: ""
-description: >-
-  Choreographer and dance artist researching Afro-diasporic gestures,
-  Afrofuturism, and the Black body as narrative.
+email: "Morgangregory85@gmail.com"
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://themorgangregory.github.io" # for GitHub Pages user site
 twitter_username: themorgangregory
